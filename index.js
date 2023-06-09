@@ -38,4 +38,14 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 })
+//  Setup and start animation!
+var typed = new Typed('#element', {
+  strings: ['Web Developer', 'Web Designer','Frontend Developer','Graphic Designer'],
+  typeSpeed: 50,
+  backSpeed:50,
+  backDelay:1000,
+  loop:true
+});
+
+ 
 
