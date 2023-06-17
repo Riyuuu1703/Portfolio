@@ -40,7 +40,7 @@ form.addEventListener('submit', e => {
 })
 //  Setup and start animation!
 var typed = new Typed('#element', {
-  strings: ['Web Developer', 'Web Designer','Frontend Developer','Graphic Designer'],
+  strings: ['Web Developer', 'Web Designer','Frontend Developer'],
   typeSpeed: 50,
   backSpeed:50,
   backDelay:1000,
