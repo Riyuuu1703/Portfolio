@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/85c3c54aa0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="portfolio1.webp" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="Closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="Openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                 
+               <h2>Hi, My name is <span>Riya</span><br> I am passionate</h2>
+               <h2><span id="element"></span></h2>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+   <div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="Riya1.jpg">
+        </div>
+        <div class="about-col-2">
+            <h1>About Me</h1>
+            <p>I am Riya <br>
+                Few facts about me..<br>
+                * I have completed my BCA in 2023.<br>
+                * I'm willing to learn about new technology <br>
+                * I'm looking forward to work as a Software Developer<br>
+                * Strong Data Structure & Algorithm concept and Enjoy Programming Challenges
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+            <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+            <li><span>Frontend Development</span><br>Using:-HTML, CSS, Tailwind, JavaScript, ReactJs</li>
+            <li><span>Backend Development</span> <br>Using:-NodeJs, ExpressJs</li>
+            <li><span>Database</span><br>Using:-MongoDb</li>
+             </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+            <li><span>2020</span><br>12th</li>
+            <li><span>2023</span><br>Bachelor In Computer Application</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   </div>
+    </div>
+
+<!-- -------Services---- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Debitis delectus obcaecati culpa ea voluptatibus quaerat tempora.</p>
+                <a href="#" >learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Debitis delectus obcaecati culpa ea voluptatibus quaerat tempora.</p>
+                <a href="#" >learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------PortFolio----- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="mobile2.jpeg">
+                <div class="layer">
+                    <h3>Movix</h3>
+                    <p>This App help you to seeing new release movies. Download it from Play Store.</p>
+                    <a href="https://movix-pearl-tau.vercel.app/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="weather.jpeg">
+                <div class="layer">
+                <h3>Weather App</h3>
+                <p>This Web App help you to see the current weather.</p>
+                <a href="https://weather-app-zeta-five-81.vercel.app"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a> 
+            </div>
+        </div>
+            <div class="work">
+                <img src="mobile3.jpeg" >
+                <div class="layer">
+                <h3>Music App</h3>
+                <p>This is Music Player App where you can hear songs.</p>
+                <a href="https://spotify-omega-one.vercel.app/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- ------Contact--- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> riyuuuu0317@gmail.com</p>
+          <div class="social-icons">
+           
+            <a href="https://www.linkedin.com/in/contactriyasandilya/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/riyuu_1703"><i class="fa-brands fa-instagram"></i></a>
+             <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <a href="Riya-Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+           <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+           </form>
+           <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright !. Made with <i class="fas fa-heart"></i> by Riya Kumari</p>
+    </div>
+</div>
+ <script src="index.js"></script>
+</body>
+</html>
